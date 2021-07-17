@@ -109,3 +109,32 @@
 </body>
 
 </html>
+
+
+<!-- vue 플러그인 임포트   -->
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js">/* vue 플러그인 임포트 */</script>
+<script src="https://unpkg.com/vuex@3.3.0/dist/vuex.js"> /* vuex 플러그인 임포트 */</script>
+<script src="https://unpkg.com/vue-router@3.1.6/dist/vue-router.js"> /* vue 라우터 플러그인 임포트 */</script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"> /* axios 플러그인 임포트 */</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> /* jQuery 플러그인 임포트 */</script>
+<script>
+
+</script>
+
+<script>
+    new Vue({
+            el: "#app",
+            data: {
+                msg1:  "aaa", /* string */
+                msg2: 123, /* number */
+                msg3: true, /* boolen */
+                msg4: [1,2,3] /* array */
+                msg5: { a:1, b: "2"}, /*I object */
+                msg6: [
+                    { a:11, b: "12"} ,
+                    { a:21, b: "22"} ,
+                    { a:31, b: "32"} ,
+                ]
+            }
+        })
+</script>

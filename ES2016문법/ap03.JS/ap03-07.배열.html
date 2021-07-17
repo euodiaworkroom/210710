@@ -200,3 +200,45 @@
         </div>
     </body>
 </html>
+
+<script>
+    // 배열 생성
+    let arr=[true, 100, "two"]
+
+    console.log( arr[1]); // 100
+
+    arr[arr.length] = "three";
+    arr[arr.length] = undefined;
+    arr.push("four");
+    arr.push("arr");
+    console.log(arr);
+
+    arr[0]="update";
+    console.log(arr);
+
+    arr.splice(2,1);
+    console.log(arr);
+
+    arr.filter(  (value, inex, array)=>{
+        debugger;
+        return value >= 100; // true dr false
+    } );
+    console.log(arr);
+
+    const arrsort = arr.sort( (a,b)=>(
+           return a - b;
+    ));
+    console.log(arrsort);
+
+    const arrmap = arr.map( (value,inex,array)=>{
+        return value + 100;
+    });
+    console.log(arrmap);
+
+    const arrreduce = arr.reduce( (pvalue, cvalue, index, array){
+        return pvalue + cvalue;
+    });
+    console.log(sum);
+
+
+</script>
